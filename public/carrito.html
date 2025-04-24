@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - BookShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BookShop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="carrito.html" class="active">Carrito</a></li>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Tu carrito de compras</h2>
+            <div id="carrito-items">
+                <!-- Aquí se cargarán los items del carrito dinámicamente -->
+                <p id="carrito-vacio">El carrito está vacío</p>
+            </div>
+            <div id="carrito-total" class="carrito-total">
+                <!-- Aquí se mostrará el total -->
+            </div>
+            <div class="carrito-botones">
+                <a href="catalogo.html" class="btn">Seguir comprando</a>
+                <button id="btn-finalizar" class="btn">Finalizar compra</button>
+            </div>
+        </section>
+
+        <section id="recomendaciones" style="display: none;">
+            <h2>Recomendados para ti</h2>
+            <div id="libros-recomendados" class="libros-grid">
+                <!-- Aquí se cargarán las recomendaciones -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 BookShop - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+</body>
+</html>

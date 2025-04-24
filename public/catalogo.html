@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - BookShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BookShop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html" class="active">Catálogo</a></li>
+                    <li><a href="carrito.html">Carrito</a></li>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="busqueda">
+            <h2>Catálogo de libros</h2>
+            <div class="buscador">
+                <input type="text" id="busqueda" placeholder="Buscar por título, autor o tema...">
+                <button id="btn-buscar" class="btn">Buscar</button>
+            </div>
+        </section>
+
+        <section>
+            <div id="resultados-busqueda" class="libros-grid">
+                <!-- Aquí se cargarán los resultados de búsqueda -->
+                <p>Cargando libros populares...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 BookShop - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/catalogo.js"></script>
+</body>
+</html>
