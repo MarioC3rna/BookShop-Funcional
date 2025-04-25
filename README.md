@@ -39,6 +39,20 @@ tienda-libros-online
 
 ## Descripción de Archivos
 
+Diseño del grafo (nodos, aristas, pesos):
+
+
+![Imagen1](https://github.com/user-attachments/assets/15e79397-3729-470d-9380-1a5595a91efe)
+
+
+
+Reflexión: Este proyecto más que todo estuve viendo más a fondo como las tiendas en línea, que están bien configuradas, atraen a las personas o hacen que las personas compren cosas relacionadas a sus gustos, cosas de uso diario o simplemente comprar por comprar.
+Este aprendizaje me sirve como experiencia para realizar páginas webs que recomienden objetos a las personas, a comparación de una base de datos normal, le hayo más uso a los grafos, respecto a las tiendas web o redes sociales ya que hay mas movimiento de productos para que el usuario lo pueda ver en vez de andar buscando uno por uno, cosas que tal vez necesita o quiere.
+Algoritmo: Ya que mi proyecto es una tienda online de similitudes, use el algoritmo de Similitud de Coseno ya que al momento de que la persona se interese por un libro este se creara un nodo que esta unido a un nodo general (genero de los libros) y como varios libros están conectados a estos libros se le recomendaran a la persona libros parecidos a género que le gusta.
+¿Cómo podrías mejorar tu sistema?
+Implantado un nuevo grafo para recomendar mas libros respecto a los gustos de la persona, implementar mas géneros de lectura y corregir errores de lógica 
+
+
 - **src/assets/css/**: Contiene los archivos CSS para el estilo de la tienda.
   - `main.css`: Estilos principales.
   - `normalize.css`: Normaliza estilos entre navegadores.
@@ -157,26 +171,7 @@ El proyecto utiliza Neo4j para implementar un sistema de recomendación basado e
 - Node.js y npm
 - Neo4j Database (instalado localmente o accesible remotamente)
 
-### Pasos de Instalación
 
-1. Clonar el repositorio:
-```
-git clone <url-del-repositorio>
-```
-2. Navegar al directorio del proyecto:
-```
-cd tienda-libros-online
-```
-3. Instalar dependencias:
-```
-npm install
-```
-4. Configurar las variables de entorno en un archivo `.env`.
-
-## Uso
-
-- Abre `index.html` en tu navegador para iniciar la aplicación.
-- Explora el catálogo de libros, agrega libros al carrito y procede al pago.
 
 ## Contribuciones
 
